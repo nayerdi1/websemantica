@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>noticias</title>
+    <link rel="stylesheet" href="estilos/estilosIndex.css">
+</head>  
+<body>
+    <!---cabecera de la página-->
+    <header>
+        <img id="logo" src="./multimedia/sopa.png"> on egin!
+    </header>
+    <!---zona de navegación con botones a diferentes contenidos-->
+    <nav>
+        <button class="buttonNav" type="button"><a href="./index.html">Inicio</a></button>
+        <button class="buttonNav" type="button"><a href="./categoriasRecetas.html">Categorias recetas</a></button>
+        <button class="buttonNav" type="button"><a href="./contacto.html">Contacto</a></button>
+    </nav>
+    <!---seccion de noticias-->
+    <section>
+        <article class="noticias">
+            <h1>‘Uebo’ ultima el lanzamiento de su tortilla vegana</h1> 
+            <p class="texto-noticias">Hace unos meses, la fabricante Shukran Foods 
+                ( Soifa Alimentación ) daba a conocer 'Uebo', 
+                una alternativa vegana al huevo de gallina y que contaba, 
+                además del sabor similar, con otras virtudes que lo hacían 
+                apto para uso en la elaboración de distintas recetas 
+                que necesitan huevo para su preparación. En este sentido, 
+                acaba de terminar el desarrollo de una tortilla de patatas 
+                y cebolla sin ingredientes animales. ¿Dónde se podrá 
+                encontrar este producto? ¿Cuándo estará a la venta? 
+                ¿Con qué otros fabricantes tendrá que competir para ganarse al público vegano?
+            </p>
+            <a href="https://www.alimarket.es/alimentacion/noticia/377295/-uebo--ultima-el-lanzamiento-de-su-tortilla-vegana" target="_blank">
+                <button class="button" type="button" >noticia completa</button></a>
+        </article>
+        <article class="noticias">
+            <h1>Ruta por los mejores restaurantes veganos de Madrid</h1>
+            <p class="texto-noticias">Ya sea porque están comprometidos con el medioambiente o 
+                porque simplemente disfrutan de este tipo de comida, 
+                cada vez hay más gente que se inclina por una alimentación plant based. 
+                Y en Madrid tenemos muy buenos restaurantes veganos que ofrecen 
+                una gastronomía saludable y deliciosa sin productos de origen animal.
+            </p>
+            <a href="https://www.mujeresaseguir.com/tendencias/noticia/1175941048815/ruta-mejores-restaurantes-veganos-de-madrid.1.html"
+            target="_blank">
+                <button class="button" type="button" >noticia completa</button></a>
+        </article>
+
+        <article class="noticias">
+            <h1>Un puesto de comida vegana, lo último del Mercado de Santo Domingo</h1>
+            <p id="parrafoNoticia" class="texto-noticias">
+                En la planta baja del Mercado de Santo Domingo de Pamplona, 
+                entre los puestos de frutas y verduras y las pescaderías, 
+                se encuentra Valle Vegg, un local que vende platos veganos preparados. 
+                
+                <span id="restoContenido" style="display: none;">
+                    Es la última apertura del mercado municipal del Casco Antiguo, 
+                    el pasado 9 de diciembre. Al frente de este negocio se encuentra Alicia Cubillos Riesgo, 
+                    de 28 años y natural de Pueyo, aunque reside en Pamplona desde hace años.
+                </span>
+            </p>
+            
+            <button type="button"  onclick="mostrarContenido()">+</button>
+            <a  href="https://www.diariodenavarra.es/noticias/navarra/pamplona-comarca/pamplona/2022/12/16/puesto-comida-vegana-ultimo-mercado-santo-domingo-551837-1702.html"
+            target="_blank"><button class="button" type="button" >noticia completa</button></a>
+            <script>
+                function mostrarContenido() {
+                    var parrafoNoticias = document.getElementById("parrafoNoticias");
+                    var restoContenido = document.getElementById("restoContenido");
+                    var botonSeguirLeyendo = document.querySelector("button");
+                   
+                    restoContenido.style.display = "block";  
+                    botonSeguirLeyendo.style.display = "none";
+                }
+            </script>
+        </article>
+    </section>
+     <!---pie de página con autoria y licencias-->
+    <footer>
+        <p>Autoría y licencias: Página web realizada por Nora Ayerdi con fines educativos. 
+        Todos los derechos de las imágenes están reservados y pertenecen a sus autores. © 2023
+        <a href="https://www.freepik.es/alimentacion-bebidas#from_element=categories_block" target="_blank">Créditos de imagenes</a> 
+    </p></footer>
+    
+</body>
+</html>

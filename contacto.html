@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>contacto</title>
+    <link rel="stylesheet" href="estilos/estilosIndex.css">
+</head>  
+<body>
+    <!---cabecera de la página-->
+    <header>
+        <img id="logo" src="./multimedia/sopa.png"> on egin!
+    </header>
+    <!---zona de navegación con botones a diferentes contenidos-->
+    <nav>
+        <button class="buttonNav" type="button"><a href="./index.html">Inicio</a></button>
+        <button class="buttonNav" type="button"><a href="./categoriasRecetas.html">Categorias recetas</a></button>
+        <button class="buttonNav" type="button"><a href="./noticias.html">Noticias</a></button>    
+    </nav>
+    <!---bloque principal que contiene el main y el aside-->
+    <section class="bloqueSection">
+        <!---formulario de contacto-->
+        <main id="contacto">
+            <h2>Formulario de contacto</h2>
+            <form action="mailto:nayerdi@birt.eus" method="get">
+                
+                <label for="name">Nombre:</label>
+                <input type="text" name="nombre">
+                <br><br>
+                <label for="mail">Email:</label>
+                <input type="email" name="email">
+                <br><br>
+                <label>Género:</label>
+                <input type="radio" name="genero" value="femenino" checked>femenino
+                <input type="radio" name="genero" value="masculino" checked>masculino
+                <input type="radio" name="genero" value="otro" checked>otro
+                <br><br>
+                <label for="motivo">Motivo de la consulta:</label>
+                <select name="tema">
+                    <option value="recetas">recetas</option>
+                    <option value="noticias">noticias</option>
+                    <option value="otros">otros</option>
+                </select>
+                <br><br>
+                <label for="mensaje">Mensaje:</label>
+                <br><br>
+                <textarea name="mensaje" rows="10" cols="30">
+                    Escriba aqui su comentario
+                </textarea>
+                <br>
+                <input type="submit" value="Enviar"></input>
+            
+            </form>
+        </main>
+        <!---enlaces a redes sociales-->
+        <aside id="redesSociales">
+            <p>Tambien nos puedes encontrar en:</p>
+            <a href="https://www.instagram.com/"><img class="logo-redes" src="multimedia/instagram.jpg"></a>
+            <a href="https://www.facebook.com/?locale=es_ES"><img class="logo-redes" src="multimedia/facebook.jpg"></a>
+            <a href="https://twitter.com/?lang=es"><img class="logo-redes" src="multimedia/x.jpg"></a>
+        </aside>
+    </section>
+     <!---pie de página con autoria y licencias-->
+    <footer>
+        <p>Autoría y licencias: Página web realizada por Nora Ayerdi con fines educativos. 
+        Todos los derechos de las imágenes están reservados y pertenecen a sus autores. © 2023
+        <a href="https://www.freepik.es/alimentacion-bebidas#from_element=categories_block" target="_blank">Créditos de imagenes</a> 
+        </p>
+    </footer>
+    
+</body>
+</html>
